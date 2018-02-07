@@ -1,0 +1,7 @@
+﻿@model Sample.Models.DropDownViewModel
+
+@using (Html.BeginForm("ShowDDL", "DropDown", FormMethod.Post))
+{
+    @Html.DropDownListFor(model => model.DealerIdRef, Model.Ddllist, " Select Dealer ", new { @class = "form-control" })
+    <button>Submit</button>
+}
